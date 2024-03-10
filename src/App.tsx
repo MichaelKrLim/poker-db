@@ -11,8 +11,8 @@ function App() {
     const blackWhiteTheme = createTheme({
         palette: {
             primary: {
-                main: "#d7d7d7",
-                light: "#FAFAFA",
+                main: "#c4c4c4",
+                light: "#d7d7d7",
                 dark: "#979797",
                 contrastText: "#3C3C3C"
             },
