@@ -5,7 +5,6 @@ import { Menu } from "./Menu.tsx";
 import { AddUser } from "./Pages/AddUser.tsx";
 import { RecordGames } from "./Pages/RecordGames.tsx";
 import { ThemeProvider, createTheme, } from "@mui/material";
-import './App.css'
 
 function App() {
     const blackWhiteTheme = createTheme({

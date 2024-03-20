@@ -1,7 +1,10 @@
+import CardIcon from './assets/menuPlayingCardLogo.svg';
+
 export const Menu = () => {
+
     return (
-        <>
-            <h1>Menu</h1>
-        </>
+        <div className="menu">
+            <img className="cardIcon" src={CardIcon} />
+        </div>
     )
 }

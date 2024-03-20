@@ -1,57 +1,32 @@
 import { Link } from "react-router-dom";
-import {AppBar, Toolbar, Typography, Box, Button, Container} from "@mui/material";
+import { AppBar, Toolbar, Typography, Box, Button, Container } from "@mui/material";
 import StorageIcon from '@mui/icons-material/Storage';
 import HomeIcon from '@mui/icons-material/Home';
 
 export const Navbar = () => {
 
     return (
-        <AppBar position="static">
-            <Container maxWidth="xl">
-                <Toolbar disableGutters>
-                    <StorageIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <AppBar position="static" sx={{ width: 'fit-content', height: '100vh' }}>
+            <Container disableGutters className="navbarContainer">
+                <Toolbar disableGutters sx={{ flexDirection: 'column' }}>
+                    <StorageIcon sx={{ mb: '1rem', mt: '1rem' }} />
+
                     <Typography
                         variant="h6"
                         noWrap
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
+                        className="logoText"
                     >
-                        PYTHON-DB
+                        POKER-DB
                     </Typography>
+                </Toolbar>
 
-                    <StorageIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-
-                    <Typography
-                        variant="h5"
-                        noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        PYTHON-DB
-                    </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                <Toolbar disableGutters sx={{ flexDirection: 'column' }}>
+                    <Box>
                         <Button
-                            sx={{ my: 2, color: 'inherit', display: 'block' }}
+                            sx={{ color: 'inherit', display: 'block' }}
                         >
                             <Link to={"/"}>
-                                <HomeIcon style={{ color: "#979797" }}/>
+                                <HomeIcon style={{ color: "#979797" }} />
                             </Link>
                         </Button>
                     </Box>
