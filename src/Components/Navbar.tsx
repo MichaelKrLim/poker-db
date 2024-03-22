@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import { AppBar, Toolbar, Typography, Box, Button, Container } from "@mui/material";
 import StorageIcon from '@mui/icons-material/Storage';
 import HomeIcon from '@mui/icons-material/Home';
@@ -23,7 +24,7 @@ export const Navbar = () => {
                 <Toolbar disableGutters sx={{ flexDirection: 'column' }}>
                     <Box>
                         <Button
-                            sx={{ color: 'inherit', display: 'block' }}
+                            className='squareButton'
                         >
                             <Link to={"/"}>
                                 <HomeIcon style={{ color: "#979797" }} />
