@@ -20,7 +20,7 @@ function App() {
                 light: "#818181",
                 dark: "#2A2A2A",
                 contrastText: "#DEDEDE",
-            }
+            },
         }
     });
 
