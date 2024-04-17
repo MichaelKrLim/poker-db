@@ -4,7 +4,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 export const RecordGames = () => {
     return (
     <div className="suiteSelectorContainer">
-    <ImageList className="suiteSelectorImageList" sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
+    <ImageList className="suiteSelectorImageList" sx={{ width: 500, height: 200 }} cols={4} rowHeight={164}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
