@@ -48,6 +48,19 @@ body
   align-items: center;
 }
 
+.suiteSelectorContainer
+{
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.suiteSelectorImageList
+{
+  grid-row: 1;
+  grid-column: 1;
+}
+
 .animatedCardIcon
 {
   width: 20rem;
