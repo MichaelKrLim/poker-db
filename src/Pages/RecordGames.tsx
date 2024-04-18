@@ -1,10 +1,15 @@
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
+import AceOfClubs from '../assets/clubs_ace.svg';
+import AceOfDiamonds from '../assets/diamonds_ace.svg'
+import AceOfHearts from '../assets/hearts_ace.svg'
+import AceOfSpades from '../assets/spades_ace.svg'
+
 export const RecordGames = () => {
     return (
     <div className="suiteSelectorContainer">
-    <ImageList className="suiteSelectorImageList" sx={{ width: 500, height: 200 }} cols={4} rowHeight={164}>
+    <ImageList className="suiteSelectorImageList" sx={{ width: 600, height: 300 }} cols={4} rowHeight={164} gap={8}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
@@ -22,7 +27,19 @@ export const RecordGames = () => {
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
+    img: AceOfClubs,
+    title: 'Clubs',
   },
+  {
+    img: AceOfSpades,
+    title: 'Spades',
+  },
+  {
+    img: AceOfHearts,
+    title: 'Hearts',
+  },
+  {
+    img: AceOfDiamonds,
+    title: 'Diamonds'
+  }
 ];
